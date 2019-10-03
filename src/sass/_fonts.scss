@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'light';
+  src: url('../fonts/museoSans/Museo300.eot'),
+    url('../fonts/museoSans/Museo300.woff') format('woff'),
+    url('../fonts/museoSans/Museo300.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo-bold';
+  src: url('../fonts/museoSans/Museo700.eot'),
+    url('../fonts/museoSans/Museo700.woff') format('woff'),
+    url('../fonts/museoSans/Museo700.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin reg {
+  font-family: 'light', sans-serif;
+  font-weight: 400;
+}
+
+@mixin bold {
+  font-family: 'Museo-bold', sans-serif;
+  font-weight: 700;
+}

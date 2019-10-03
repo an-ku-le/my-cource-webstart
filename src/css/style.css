@@ -1,6 +1,21 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'light';
+  src: url("../fonts/museoSans/Museo300.eot"), url("../fonts/museoSans/Museo300.woff") format("woff"), url("../fonts/museoSans/Museo300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo-bold';
+  src: url("../fonts/museoSans/Museo700.eot"), url("../fonts/museoSans/Museo700.woff") format("woff"), url("../fonts/museoSans/Museo700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'light', sans-serif;
+  font-weight: 400;
 }
 
 img {
@@ -36,6 +51,11 @@ img {
 }
 
 /* Импорт стилей шапки */
+.navbar__logo {
+  margin-left: -1px;
+  margin-top: 5px;
+}
+
 .navbar-block {
   padding: 6px 0;
   display: -webkit-box;
@@ -69,28 +89,45 @@ img {
           justify-content: center;
 }
 
+.navbar__address {
+  font-size: 13px;
+  font-family: 'light', sans-serif;
+  font-weight: 400;
+}
+
 .navbar__button {
-  margin-left: 30px;
+  margin-left: 29px;
+  font-size: 13px;
+  font-family: 'Museo-bold', sans-serif;
+  font-weight: 700;
 }
 
 .navbar__phone {
-  color: #333333;
+  margin-top: 7px;
+  font-family: 'Museo-bold', sans-serif;
+  font-weight: 700;
   font-size: 20px;
-  font-weight: 400;
+  color: #333333;
   text-decoration: none;
-  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    margin-bottom: 8px;
+  }
   .navbar__contacs {
     display: none;
   }
   .navbar__button {
+    margin-top: 5px;
+    margin-right: 7px;
     font-size: 10px;
-    padding: 15px 26px;
+    padding: 14px 26px;
     border-radius: 5px;
   }
   .navbar__logo {
+    margin-top: 11px;
+    margin-left: 4px;
     width: 91px;
   }
 }
@@ -108,27 +145,32 @@ img {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  -ms-flex-preferred-size: 39%;
+      flex-basis: 39%;
   padding-right: 140px;
 }
 
 .hero-text__title {
-  font-size: 41px;
-  font-weight: 400;
+  margin-left: -3px;
+  font-family: 'Museo-bold', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 0.2px;
   line-height: 55px;
   margin-bottom: 37px;
 }
 
 .hero-text__subtitle {
   display: inline-block;
-  margin-bottom: 68px;
+  margin-bottom: 67px;
+  letter-spacing: 0.5px;
   font-size: 20px;
   font-weight: 400;
 }
 
 .hero-list {
   margin: 0;
+  margin-left: -3px;
   padding: 0;
 }
 
@@ -184,18 +226,23 @@ img {
     padding: 17px 0;
   }
   .hero-block {
-    width: 96%;
+    width: 95%;
     margin-right: auto;
     margin-left: auto;
   }
   .hero-text__title {
+    margin-left: 3px;
+    margin-top: 24px;
     margin-bottom: 5px;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.4;
   }
   .hero-text__subtitle {
     margin-bottom: 25px;
     font-size: 16px;
+  }
+  .hero-list {
+    margin-top: 3px;
   }
   .hero-list__item {
     margin-bottom: 16px;
@@ -205,6 +252,9 @@ img {
   }
   .hero-list__image {
     margin-right: 15px;
+  }
+  .hero-image {
+    margin-top: -3px;
   }
 }
 /*# sourceMappingURL=style.css.map */
