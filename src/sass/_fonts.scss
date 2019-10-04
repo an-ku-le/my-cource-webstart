@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'light';
+  font-family: 'Museo-light';
   src: url('../fonts/museoSans/Museo300.eot'),
     url('../fonts/museoSans/Museo300.woff') format('woff'),
     url('../fonts/museoSans/Museo300.ttf') format('truetype');
@@ -17,7 +17,7 @@
 }
 
 @mixin reg {
-  font-family: 'light', sans-serif;
+  font-family: 'Museo-light', sans-serif;
   font-weight: 400;
 }
 
